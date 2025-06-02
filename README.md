@@ -95,3 +95,7 @@ $10M USD
 +70% anual
 
 
+📌 Nota explicativa para presentaciones y sitio web
+
+Fractal Token es una herramienta legal de participación social en una cooperativa de vivienda y servicios turísticos. No es una inversión bursátil, ni un instrumento financiero. Representa una fracción digital del uso, beneficio y excedente de un modelo de propiedad colectiva respaldado en activos reales. Todas las operaciones están protegidas por la Ley General de Sociedades Cooperativas.
+
