@@ -1,39 +1,22 @@
-< uyqead-codex/crear-contrato-solidity-revenuesplitter
-require("@nomiclabs/hardhat-ethers");
-
-module.exports = {
-  solidity: "0.8.20",
-  networks: {
-    mumbai: {
-      url: process.env.MUMBAI_RPC_URL || "",
-      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
-    },
-  },
-
-< o82cie-codex/crear-contrato-solidity-revenuesplitter
 require('dotenv').config();
-require('@nomiclabs/hardhat-ethers');
-require('@nomiclabs/hardhat-etherscan');
+require('@nomicfoundation/hardhat-toolbox');
 
-const INFURA_ID = process.env.INFURA_ID;
-const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const { PRIVATE_KEY, MUMBAI_RPC_URL, POLYGON_RPC_URL, POLYGONSCAN_API_KEY } = process.env;
 
 module.exports = {
   solidity: '0.8.20',
   networks: {
+    mumbai: {
+      url: MUMBAI_RPC_URL || '',
+      accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
+    },
     polygon: {
-      url: `https://polygon-mainnet.infura.io/v3/${INFURA_ID}`,
+      url: POLYGON_RPC_URL || '',
       accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
       chainId: 137,
     },
   },
   etherscan: {
-    apiKey: process.env.POLYGONSCAN_API_KEY,
+    apiKey: POLYGONSCAN_API_KEY || '',
   },
-
-require("@nomicfoundation/hardhat-toolbox");
-module.exports = {
-  solidity: "0.8.20",
- main
- main
 };
