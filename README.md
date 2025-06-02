@@ -1,81 +1,43 @@
-codex/configura-proyecto-fractal-token-en-termux
 # Fractal Token
 
-This repository contains the smart contract `FractalToken.sol` which models a programmable real estate token inspired by the ERC‑3643 standard. The contract tracks fractional ownership, governance power and enforces whitelist based transfers.
+This project contains Solidity contracts for managing fractional real estate tokens and a simple React frontend. The main contract `FractalToken.sol` implements a basic whitelisted token that allows owners to allocate and claim rental yield. `FractalTokenFactory.sol` can deploy new token instances, while `RevenueSplitter.sol` distributes revenue among holders.
 
-`FractalTokenFactory.sol` allows deploying new instances of `FractalToken` for
-different properties using custom parameters.
-===
- zoymew-codex/crear-contrato-solidity-revenuesplitter
-# Fractal Token Project
+## Requirements
 
-This repository contains Solidity contracts for managing fractional real estate tokens and a simple frontend built with Vite and React.
+- Node.js
+- Hardhat
 
-## Contracts
+Create a `.env` file based on `.env.example` and fill in your RPC URLs, private key and Polygonscan key.
 
-- `RevenueSplitter.sol` – Distributes rental income among token holders.
-
-## Frontend
-
-A basic React interface lives under `frontend/`. It connects to Metamask on the Polygon Mumbai network and interacts with the deployed contracts.
-
-### Install dependencies
-
-```bash
-cd frontend
-npm install
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
-
-Update the contract addresses in `src/utils/contract.js` with the ones deployed on Polygon Mumbai.
-
-# Fractal Token
-
-uyqead-codex/crear-contrato-solidity-revenuesplitter
-## Deploying Contracts
-
-Install dependencies and run the deployment script on the Mumbai testnet:
+## Install
 
 ```bash
 npm install
-npx hardhat run scripts/deploy.js --network mumbai
+cd frontend && npm install
 ```
 
-<o82cie-codex/crear-contrato-solidity-revenuesplitter
-## Deployment
-1. Copy `.env.example` to `.env` and fill in your `INFURA_ID`, `PRIVATE_KEY`, and `POLYGONSCAN_API_KEY`.
-2. Install dependencies with `npm install --save-dev hardhat @nomiclabs/hardhat-ethers @nomiclabs/hardhat-etherscan dotenv`.
-3. Deploy on Polygon mainnet:
-   ```bash
-   npx hardhat run scripts/deploy.js --network polygon
-   ```
+## Test
 
-### Security
-- Make sure `.env` is listed in `.gitignore`.
-- Never commit private keys or API keys to version control.
-
-This repository contains Solidity contracts for a fractional real estate token and related utilities.
-
-## Hardhat Setup
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run tests with:
+Run the contract tests with Hardhat:
 
 ```bash
 npx hardhat test
 ```
 
- main
- > main
- main
->>> main
+## Deploy
+
+Deploy the contracts to a network such as Mumbai:
+
+```bash
+npx hardhat run scripts/deploy.js --network mumbai
+```
+
+## Frontend
+
+Inside `frontend/` run the development server:
+
+```bash
+npm run dev
+```
+
+Update the contract addresses in `frontend/src/utils/contract.js` with the ones printed on deployment.
