@@ -1,5 +1,15 @@
 # Fractal Token
 
+uyqead-codex/crear-contrato-solidity-revenuesplitter
+## Deploying Contracts
+
+Install dependencies and run the deployment script on the Mumbai testnet:
+
+```bash
+npm install
+npx hardhat run scripts/deploy.js --network mumbai
+```
+=======
 <o82cie-codex/crear-contrato-solidity-revenuesplitter
 ## Deployment
 1. Copy `.env.example` to `.env` and fill in your `INFURA_ID`, `PRIVATE_KEY`, and `POLYGONSCAN_API_KEY`.
@@ -30,3 +40,4 @@ npx hardhat test
 ```
 
  main
+ > main
