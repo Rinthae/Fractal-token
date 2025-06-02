@@ -1,0 +1,7 @@
+{
+  "name": "fractal-token",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0"
+  }
+}
