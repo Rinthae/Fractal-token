@@ -1,3 +1,4 @@
+< o82cie-codex/crear-contrato-solidity-revenuesplitter
 require('dotenv').config();
 require('@nomiclabs/hardhat-ethers');
 require('@nomiclabs/hardhat-etherscan');
@@ -17,4 +18,9 @@ module.exports = {
   etherscan: {
     apiKey: process.env.POLYGONSCAN_API_KEY,
   },
+
+require("@nomicfoundation/hardhat-toolbox");
+module.exports = {
+  solidity: "0.8.20",
+ main
 };
