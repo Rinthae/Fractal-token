@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
+ codex/configura-proyecto-fractal-token-en-termux
 import "./FractalToken.sol";
 
 /// @title FractalTokenFactory
@@ -46,5 +47,19 @@ contract FractalTokenFactory {
     /// @notice Returns all deployed token contracts
     function getAllTokens() external view returns (FractalToken[] memory) {
         return allTokens;
+=======
+/**
+ * @title FractalTokenFactory
+ * @dev Placeholder contract for deploying FractalToken instances.
+ */
+contract FractalTokenFactory {
+    event TokenCreated(address token);
+
+    function createToken() external returns (address) {
+        // Implementation would deploy a new token
+        address token = address(0);
+        emit TokenCreated(token);
+        return token;
+>> main
     }
 }
