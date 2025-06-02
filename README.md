@@ -1,3 +1,31 @@
+ zoymew-codex/crear-contrato-solidity-revenuesplitter
+# Fractal Token Project
+
+This repository contains Solidity contracts for managing fractional real estate tokens and a simple frontend built with Vite and React.
+
+## Contracts
+
+- `RevenueSplitter.sol` – Distributes rental income among token holders.
+
+## Frontend
+
+A basic React interface lives under `frontend/`. It connects to Metamask on the Polygon Mumbai network and interacts with the deployed contracts.
+
+### Install dependencies
+
+```bash
+cd frontend
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+Update the contract addresses in `src/utils/contract.js` with the ones deployed on Polygon Mumbai.
+
 # Fractal Token
 
 uyqead-codex/crear-contrato-solidity-revenuesplitter
@@ -9,7 +37,7 @@ Install dependencies and run the deployment script on the Mumbai testnet:
 npm install
 npx hardhat run scripts/deploy.js --network mumbai
 ```
-=======
+
 <o82cie-codex/crear-contrato-solidity-revenuesplitter
 ## Deployment
 1. Copy `.env.example` to `.env` and fill in your `INFURA_ID`, `PRIVATE_KEY`, and `POLYGONSCAN_API_KEY`.
@@ -41,3 +69,4 @@ npx hardhat test
 
  main
  > main
+ main

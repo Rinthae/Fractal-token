@@ -1,6 +1,15 @@
+< zoymew-codex/crear-contrato-solidity-revenuesplitter
+# Node modules
+frontend/node_modules/
+frontend/dist/
+
+# Env files
+*.env
+=
 o82cie-codex/crear-contrato-solidity-revenuesplitter
 .env
 node_modules
 
 node_modules/
 > main
+>> main
