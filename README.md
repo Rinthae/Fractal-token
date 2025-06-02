@@ -1,43 +1,97 @@
-# Fractal Token
+#Fractal_Token
 
-This project contains Solidity contracts for managing fractional real estate tokens and a simple React frontend. The main contract `FractalToken.sol` implements a basic whitelisted token that allows owners to allocate and claim rental yield. `FractalTokenFactory.sol` can deploy new token instances, while `RevenueSplitter.sol` distributes revenue among holders.
+📁 Tokenización Fraccional de Bienes Raíces con Renta Estable y Vía de Inversión Diplomática
 
-## Requirements
+Este repositorio contiene contratos inteligentes escritos en Solidity para la creación y gestión de tokens fraccionales de propiedad inmobiliaria, así como un frontend en React para interactuar con ellos. El sistema está diseñado para facilitar la inversión directa en activos turísticos y de renta a través de un modelo descentralizado, escalable y diplomáticamente respaldado.
 
-- Node.js
-- Hardhat
+🚀 Componentes Principales
+	•	FractalToken.sol
+Contrato base ERC20 con whitelist, permite asignar y reclamar rendimiento por renta de forma programada.
+	•	FractalTokenFactory.sol
+Fábrica de contratos que permite desplegar múltiples instancias del Fractal Token para distintos proyectos inmobiliarios.
+	•	RevenueSplitter.sol
+Gestiona la distribución automática de rentas entre los holders de forma proporcional.
 
-Create a `.env` file based on `.env.example` and fill in your RPC URLs, private key and Polygonscan key.
+⸻
 
-## Install
+🔧 Requisitos
+	•	Node.js
+	•	Hardhat
+	•	Variables de entorno (.env) con:
+	•	URL de RPC (e.g. Infura, Alchemy)
+	•	Clave privada de la wallet desplegadora
+	•	API Key de 
 
-```bash
+INSTALACIÓN Y USO 
 npm install
 cd frontend && npm install
-```
 
-## Test
+Actualizar frontend/src/utils/contract.js con las direcciones de contrato desplegadas.
 
-Run the contract tests with Hardhat:
+⸻
 
-```bash
-npx hardhat test
-```
+🧠 Ventajas Estratégicas del Fractal Token Frente a Bitcoin
 
-## Deploy
+1. 📈 Apreciación Sólida vs. Especulativa
 
-Deploy the contracts to a network such as Mumbai:
+Mientras Bitcoin depende de la escasez y ciclos especulativos, Fractal Token se aprecia por demanda real e inversión internacional directa, eliminando intermediarios (exchanges, bancos).
 
-```bash
-npx hardhat run scripts/deploy.js --network mumbai
-```
+Fractal Token permite:
+	•	Entrada directa de capital extranjero institucional
+	•	Conversión inmediata de divisas a tokens respaldados por bienes raíces
+	•	Anclaje en propiedades rentables y turismo
 
-## Frontend
+⸻
 
-Inside `frontend/` run the development server:
+2. 📉 Baja Volatilidad, Alta Estabilidad
 
-```bash
-npm run dev
-```
+Fractal Token, al respaldarse en inmuebles turísticos y relaciones diplomáticas, ofrece:
+	•	Rentabilidad fija
+	•	Valor respaldado en tierra y plusvalía
+	•	Comportamiento defensivo ideal para fondos públicos o privados
 
-Update the contract addresses in `frontend/src/utils/contract.js` with the ones printed on deployment.
+⸻
+
+3. 🌐 Reputación Institucional
+
+Con el aval de embajadas y cooperación multilateral:
+	•	Gana legitimidad global
+	•	Accede a inversionistas soberanos y family offices
+	•	Se proyecta como activo ESG con renta, no solo especulación
+
+⸻
+
+4. 🪙 Nueva Categoría: Stable-Yield Token
+
+Fractal Token no es un “stablecoin” ni un “utility token”, sino un:
+
+Stable-yield token con respaldo diplomático e inmobiliario
+
+Único en ofrecer:
+	•	Rendimiento estable en pesos convertibles
+	•	Acceso a inversión turística con liquidez fraccionaria
+	•	Alternativa real a bonos emergentes o inversiones bancarias
+
+⸻
+
+5. 📊 Simulador de Escenarios
+
+Apreciación esperada:
+Escenario
+Capital Diplomático Ingresado
+Propiedades Tokenizadas
+Apreciación del Token
+Básico
+$500K USD
+3
++15% anual
+Medio
+$2M USD
+8
++35% anual
+Óptimo
+$10M USD
+20+
++70% anual
+
+
